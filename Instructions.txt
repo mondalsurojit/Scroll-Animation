@@ -1,0 +1,27 @@
+TASK 2  - Responsiveness and javascript (advanced)
+ 
+Check out this video. You have to mimic the same scroll behaviour as part of your assignment. UI and all the effects should exactly be the same. 
+https://drive.google.com/file/d/1wJRYx5M0ZGrIOFzHlas-GHLOwxFr_Wq5/view?usp=sharing
+
+Secondly, check the UI for the same on their mobile website in video 2. Develop the same responsive behaviour for the mobile screen in your submission.
+https://drive.google.com/file/d/1OZVhnkSiqYy1beWHqQ6WWnYjMfEGBpMD/view?usp=sharing
+
+
+
+Some links are given below, take help from them for onScroll effects:
+GSAP - https://greensock.com/gsap/ 
+ScrollTrigger from GSAP - https://greensock.com/scrolltrigger/ 
+ScrollMagic - https://scrollmagic.io/  ||  https://scrollmagic.io/examples/index.html 
+For path slider: https://www.cssscript.com/fancy-svg-path-slider-path-slider-js/ https://scotch.io/tutorials/animating-more-elements-along-svg-paths-with-javascript-part-2909 
+https://github.com/lmgonzalves/path-slider 
+Use tweenMax for SVG slider animation: https://cdnjs.com/libraries/gsap/2.1.3 
+Use OWL carousel libraries for sliders : https://owlcarousel2.github.io/OwlCarousel2/ . 
+
+
+
+SVG and image assets link: https://drive.google.com/drive/folders/1YqbQJhDS0Voiaq-Ii-Dr6A7l7eRMchBb?usp=sharing 
+ 
+Stacks to be used: HTML,CSS,JS,Bootstrap,jQuery and any other library to achieve the required scrolling effect. No frameworks to be used for this task.
+ 
+Task submission : Host the project somewhere for the HR manager to check at their own convenience. No HTML/JS/ZIP/Github files please.. HOST IT ON A FREE SERVER and provide the address for us to check the exact behaviour in action.
+
