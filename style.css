@@ -21,7 +21,7 @@
     border: none;
     text-decoration: none;
     color: white;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -62,7 +62,7 @@ body {
     height: 100vh;
     position: relative;
     scroll-snap-align: start;
-    /* border: 2px solid red; */
+    z-index: 100;
 }
 
 #mainsection {
@@ -80,14 +80,14 @@ body {
     grid-row: 1 / 11;
     grid-column: 1 / 10;
     background-color: #6211a7;
-    transition: background-color 0.3s ease-in;
+    transition: background-color 0.7s;
 }
 
 #rightsection {
     grid-row: 1 / 11;
     grid-column: 10 / 21;
     background-color: #c6c6c8;
-    transition: background-color 0.3s ease-in;
+    transition: background-color 0.7s;
 }
 
 #circularsection {
@@ -98,7 +98,7 @@ body {
     height: 23vw;
     border-radius: 50%;
     background-color: #6011a5;
-    transition: background-color 0.3s ease-in;
+    transition: background-color 0.7s;
 }
 
 #circularsection::after {
@@ -139,7 +139,7 @@ body {
 }
 
 #p2 {
-    grid-row: 4/ 6;
+    grid-row: 4/ 5;
     grid-column: 5/ 11;
     margin: 5vh 0 0 3vw;
     font-family: 'halcomlight';
@@ -148,15 +148,17 @@ body {
     z-index: 2;
 }
 
-#p3 {
+.p3 {
     grid-row: 7/ 8;
     grid-column: 2/ 6;
     margin-top: 20px;
     font-size: 42px;
     font-family: 'halcombold';
+    display: flex;
+    flex-direction: column;
 }
 
-#p4 {
+.p4 {
     grid-row: 8/ 9;
     grid-column: 2/ 6;
     width: 20vw;
@@ -166,7 +168,7 @@ body {
     font-family: 'halcomlight';
 }
 
-#casestudy {
+.casestudy {
     grid-row: 10/ 11;
     grid-column: 2/ 3;
     margin: 20px 0 0 15px;
