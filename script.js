@@ -21,7 +21,7 @@ gsap.to("#p1, #p2, #p3, #p4, #casestudy, #img1", {
         start: "top top",
         end: "bottom 10%",
         scrub: true,
-        // markers: true
+        markers: true
     },
 })
 
@@ -36,10 +36,38 @@ gsap.to("#img2, #img3", {
         start: "top top",
         end: "bottom 10%",
         scrub: true,
-        // markers: true
+        markers: true
     },
 })
 
+gsap.to("#img4", {
+    y: 100,
+    opacity: 0,
+    scrub: 1,
+    stagger: 0.1,
+    scrollTrigger: {
+        trigger: "#section2",
+        scroller: "body",
+        start: "top top",
+        end: "bottom 10%",
+        scrub: true,
+        markers: true
+    },
+})
+gsap.to("#img5", {
+    y: 50,
+    opacity: 0,
+    scrub: 1,
+    stagger: 0.1,
+    scrollTrigger: {
+        trigger: "#section2",
+        scroller: "body",
+        start: "top top",
+        end: "bottom 10%",
+        scrub: true,
+        markers: true
+    },
+})
 function scrollAction(scrollPosition) {
     if (scrollPosition < 585 * 1 - 300) {
         leftSectionColor = '#6211a7';
@@ -74,7 +102,7 @@ function scrollAction(scrollPosition) {
     else if (scrollPosition > 585 * 5 - 300 && scrollPosition < 585 * 6) {
         leftSectionColor = '#012b91';
         circularSectionColor = '#01298f';
-        rightSectionColor = '#000000';
+        rightSectionColor = 'url(images/interior.jpg) no-repeat';
         return { leftSectionColor, circularSectionColor, rightSectionColor };
     }
     else if (scrollPosition > 585 * 6 - 300 && scrollPosition < 585 * 7) {
@@ -87,9 +115,10 @@ function scrollAction(scrollPosition) {
 // window.addEventListener('load', () => {
 window.addEventListener('scroll', () => {
     let scrollPosition = window.scrollY;
-    leftSection.style.backgroundColor = scrollAction(scrollPosition).leftSectionColor;
-    circularSection.style.backgroundColor = scrollAction(scrollPosition).circularSectionColor;
-    rightSection.style.backgroundColor = scrollAction(scrollPosition).rightSectionColor;
+    leftSection.style.background = scrollAction(scrollPosition).leftSectionColor;
+    circularSection.style.background = scrollAction(scrollPosition).circularSectionColor;
+    rightSection.style.background = scrollAction(scrollPosition).rightSectionColor;
+    rightSection.style.backgroundSize = 'cover';
 });
 // });
 

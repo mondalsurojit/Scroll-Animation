@@ -63,6 +63,10 @@ body {
     position: relative;
     scroll-snap-align: start;
     z-index: 100;
+    display: grid;
+    grid-template-rows: repeat(10, 10vh);
+    grid-template-columns: repeat(20, 5vw);
+    overflow: hidden;
 }
 
 #mainsection {
@@ -80,14 +84,14 @@ body {
     grid-row: 1 / 11;
     grid-column: 1 / 10;
     background-color: #6211a7;
-    transition: background-color 0.7s;
+    transition: background 1s;
 }
 
 #rightsection {
     grid-row: 1 / 11;
     grid-column: 10 / 21;
     background-color: #c6c6c8;
-    transition: background-color 0.7s;
+    transition: background-color 1s;
 }
 
 #circularsection {
@@ -98,7 +102,7 @@ body {
     height: 23vw;
     border-radius: 50%;
     background-color: #6011a5;
-    transition: background-color 0.7s;
+    transition: background 1s;
 }
 
 #circularsection::after {
@@ -193,9 +197,7 @@ body {
     transform: translate(1%, 3%);
     height: 80vh;
     width: 23vw;
-    background: url(images/nexgtv-entertainment-mobile-app-development.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(images/nexgtv-entertainment-mobile-app-development.png) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -205,8 +207,33 @@ body {
     transform: translate(1%, 3%);
     height: 80vh;
     width: 23vw;
-    background: url(images/nexgtv-mobile-app-ui-design.png);
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url(images/nexgtv-mobile-app-ui-design.png) no-repeat center center;
+    background-size: cover;
+}
+
+#img4 {
+    grid-row: 1/ 8;
+    grid-column: 17/ 21;
+    transform: translate(8%, -17%);
+    height: 63vh;
+    width: 17vw;
+    background: url(images/veme-app-ui-design.png) no-repeat center center;
+    background-size: cover;
+}
+
+#img5 {
+    grid-row: 4/ 10;
+    grid-column: 12/ 16;
+    transform: translate(15%, 10%);
+    height: 70vh;
+    width: 19vw;
+    background: url(images/veme-blockchain-app-developed.png) no-repeat center center;
+    background-size: cover;
+}
+
+#img6 {
+    grid-row: 1 / 11;
+    grid-column: 10 / 21;
+    background: url(images/erp-app-development-service.png) no-repeat center center;
     background-size: cover;
 }
